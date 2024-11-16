@@ -1,0 +1,7 @@
+
+def has44(arr):
+    ##Your code here
+    for i in range(0,len(arr)-1):
+        if(arr[i]==4 and arr[i+1]==4):
+            return True
+    return False
