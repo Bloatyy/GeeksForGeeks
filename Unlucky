@@ -1,0 +1,18 @@
+def realSum(numbers):
+    ##Your code here
+    if not numbers:  # Check if the list is empty
+        return 0
+    
+    total = 0
+    skip = False
+    
+    for i in range(len(numbers)):
+        if skip:  # Skip the current number if the previous one was 7
+            skip = False
+            continue
+        if numbers[i] == 7:
+            skip = True
+            continue
+        total += numbers[i]
+    
+    return total
