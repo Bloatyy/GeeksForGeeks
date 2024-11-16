@@ -1,0 +1,8 @@
+def avg(mylist):
+    ##Your Code Here
+    temp=mylist
+    temp.remove(min(temp))
+    temp.remove(max(temp))
+    s=sum(temp)
+    s=s//len(temp)
+    return s
