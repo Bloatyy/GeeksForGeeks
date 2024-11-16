@@ -1,0 +1,7 @@
+def aweSum(A, B):
+    ##Your code here
+    sum=A+B
+    if(sum>19 and sum<41):
+        return 42
+    else:
+        return sum
